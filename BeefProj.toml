@@ -1,0 +1,13 @@
+FileVersion = 1
+
+[Project]
+Name = "librg-beef"
+TargetType = "BeefLib"
+StartupObject = "librg_beef.Program"
+
+[Configs.Debug.Win64]
+CLibType = "DynamicDebug"
+LibPaths = ["$(ProjectDir)\\libs\\librgd.lib"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)\\libs\\librg.lib"]

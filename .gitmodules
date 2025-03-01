@@ -1,0 +1,3 @@
+[submodule "librg"]
+	path = librg
+	url = git@github.com:zpl-c/librg.git
