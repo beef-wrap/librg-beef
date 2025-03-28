@@ -1,6 +1,7 @@
 using System;
+using System.Interop;
 
-namespace librg_Beef;
+namespace librg;
 
 extension librg
 {
@@ -18,7 +19,7 @@ extension librg
 	public const int16_t LIBRG_OFFSET_MID = (.)0x0000;
 	public const int16_t LIBRG_OFFSET_END = (.)0x7fff;
 
-	enum librg_event_type
+	public enum librg_event_type : c_int
 	{
 		LIBRG_WRITE_CREATE,
 		LIBRG_WRITE_UPDATE,
@@ -31,16 +32,16 @@ extension librg
 		LIBRG_ERROR_CREATE,
 		LIBRG_ERROR_UPDATE,
 		LIBRG_ERROR_REMOVE,
-	};
+	}
 
 	function int32_t librg_event_fn(librg_world* world, librg_event* event);
 
-	enum librg_visibility
+	public enum librg_visibility : c_int
 	{
 		LIBRG_VISIBLITY_DEFAULT,
 		LIBRG_VISIBLITY_NEVER,
 		LIBRG_VISIBLITY_ALWAYS,
-	};
+	}
 
 
 	// =======================================================================//

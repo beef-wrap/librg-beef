@@ -1,7 +1,7 @@
 using System;
 using System.Interop;
 
-namespace librg_Beef;
+namespace librg;
 
 extension librg
 {

@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Diagnostics;
 using System.IO;
-using static librg_Beef.librg;
+using static librg.librg;
 
 namespace example;
 

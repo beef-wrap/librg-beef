@@ -1,6 +1,6 @@
 using System;
 
-namespace librg_Beef;
+namespace librg;
 
 extension librg
 {
